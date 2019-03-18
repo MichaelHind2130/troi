@@ -79,7 +79,7 @@ focus_tree = {
 	focus = {
 		id = TEU_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = army_effort }
+		prerequisite = { focus = TEU_test_effort }
 		x = 0
 		y = 2
 		relative_position_id = TEU_test_effort
