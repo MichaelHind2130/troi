@@ -1,0 +1,39 @@
+focus_tree = {
+	id = enigma_union_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = TEU
+		}
+	}
+	
+	default = no
+	
+
+	focus = {
+		id = TEU_test_effort
+		icon = GFX_goal_generic_construction
+		x = 1
+		y = 0
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	
+
+	
+}
