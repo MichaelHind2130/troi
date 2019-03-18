@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "GER"
+		default_country = "TBL"
 		default = yes
 		
 		"FRA"={
@@ -65,22 +65,8 @@ bookmarks = {
 				ENG_war_with_italy
 			}
 		}
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
-			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
-			}
-			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_revive_the_kaiserreich
-			}
-		}
-		"GER"={
+		
+		"TBL"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
