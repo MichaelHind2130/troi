@@ -34,287 +34,47 @@ focus_tree = {
 	}
 
 	focus = {
-		id = TEU_equipment_effort
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = TEU_test_effort }
-		x = -1
-		y = 1
-		relative_position_id = TEU_test_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_motorization_effort
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = TEU_test_effort }
-		bypass = { has_tech = motorised_infantry }
-		x = 1
-		y = 1
-		relative_position_id = TEU_test_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 3.0
-				technology = motorised_infantry
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_doctrine_effort
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = TEU_test_effort }
-		x = 0
-		y = 2
-		relative_position_id = TEU_test_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_equipment_effort_2
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = TEU_equipment_effort }
-		x = 0
-		y = 2
-		relative_position_id = TEU_equipment_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_mechanization_effort
-		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = TEU_motorization_effort }
-		x = 0
-		y = 2
-		relative_position_id = TEU_motorization_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_doctrine_effort_2
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = TEU_doctrine_effort }
-		x = 0
-		y = 2
-		relative_position_id = TEU_doctrine_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_equipment_effort_3
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = TEU_equipment_effort_2 }
-		x = 0
-		y = 2
-		relative_position_id = TEU_equipment_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_armor_effort
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = TEU_mechanization_effort }
-		x = 0
-		y = 2
-		relative_position_id = TEU_mechanization_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_special_forces
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = TEU_equipment_effort_3 }
-		prerequisite = { focus = TEU_doctrine_effort_2 }
-		prerequisite = { focus = TEU_armor_effort }
-		x = 1
-		y = 1
-		relative_position_id = TEU_equipment_effort_3
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = special_forces
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1.0
-				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
-			}
-		}
-	}
-
-	focus = {
-		id = TEU_aviation_effort
-		icon = GFX_goal_generic_build_airforce
-		x = 5
+		id = TEU_political_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 10
 		y = 0
 		cost = 10
 
 		available_if_capitulated = yes
 
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}			
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}			
+		completion_reward = {
+			add_political_power = 120
 		}
+	}
+focus = {
+		id = TEU_political_effort_2
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_political_effort }
+		x = 0
+		y = 2
+		relative_position_id = TEU_political_effort
+		cost = 10
+
+		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			add_political_power = 120
+		}
+	}
 
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = air_doctrine
-			}
+	focus = {
+		id = TEU_political_effort_3
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_political_effort_2 }
+		x = 0
+		y = 2
+		relative_position_id = TEU_political_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
 		}
 	}
 
