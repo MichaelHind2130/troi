@@ -3,6 +3,11 @@ state={
 	id=36
 	name="STATE_36"
 	manpower = 2364000
+	resources={
+		steel=4.000
+		tungsten=6.000
+		chromium=3.000
+	}
 
 	state_category = metropolis
 	buildings_max_level_factor=5.000

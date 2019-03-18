@@ -1,7 +1,10 @@
 state={
 	id=35
 	name="STATE_35"
-
+	resources={
+		steel=4.000
+		aluminum=10.000
+	}
 	history={
 		owner = TEU
 		add_core_of = TEU
