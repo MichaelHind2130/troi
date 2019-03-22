@@ -78,5 +78,138 @@ focus = {
 		}
 	}
 
+
+
+
+	focus = {
+		id = TEU_SW
+		icon = GFX_goal_generic_secret_weapon
+		x = 20
+		y = 10
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+focus = {
+		id = TEU_SW_2
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = TEU_SW }
+		x = 0
+		y = 1
+		relative_position_id = TEU_SW
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SW_3
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = TEU_SW_2 }
+		x = 0
+		y = 1
+		relative_position_id = TEU_SW_2
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SWW
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_SW_3 }
+		mutually_exclusive = { focus = TEU_SWW_2 }
+		x = 2
+		y = 1
+		relative_position_id = TEU_SW_3
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SWW_2
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_SW_3 }
+		mutually_exclusive = { focus = TEU_SWW }
+		x = -2
+		y = 1
+		relative_position_id = TEU_SW_3
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
 	
+
+focus = {
+		id = TEU_SW_4
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = TEU_SW_3 } 
+		x = 0
+		y = 2
+		relative_position_id = TEU_SW_3
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SW_5
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = TEU_SW_4 }
+		x = 0
+		y = 2
+		relative_position_id = TEU_SW_4
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SW_6
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_SW_5 }
+		x = 0
+		y = 2
+		relative_position_id = TEU_SW_5
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+
+
+
 }
