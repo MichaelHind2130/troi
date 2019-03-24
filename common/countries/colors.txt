@@ -8,6 +8,11 @@ TBL ={
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 255 73 121 }
 }
+
+KOD ={
+	color = rgb { 204 153 0 }
+	color_ui = rgb { 255 73 121 }
+}
 	
 
 
