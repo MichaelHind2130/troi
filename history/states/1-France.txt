@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = TBL
+		owner = FRA
 		victory_points = { 3838 1 }
 		buildings = {
 			infrastructure = 4
