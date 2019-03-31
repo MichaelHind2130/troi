@@ -562,3 +562,15 @@ D15 = {
 	color = rgb { 194 140 86 }
 	color_ui = rgb { 252 182 112 }
 }
+D16 = {
+	color = rgb { 123 12 98 }
+	color_ui = rgb { 252 182 112 }
+}
+D17 = {
+	color = rgb { 124 190 186 }
+	color_ui = rgb { 252 182 112 }
+}
+D18 = {
+	color = rgb { 149 130 68 }
+	color_ui = rgb { 252 182 112 }
+}
