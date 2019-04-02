@@ -24,6 +24,32 @@ DCS ={
 	color_ui = rgb { 255 73 121 }
 }
 
+KNG ={
+	color = rgb { 20 14 282 }
+	color_ui = rgb { 255 73 121 }
+}
+
+SRN ={
+	color = rgb { 90 192 154 }
+	color_ui = rgb { 255 73 121 }
+}
+
+PZN ={
+	color = rgb { 10 19 100 }
+	color_ui = rgb { 255 73 121 }
+}
+
+SCN ={
+	color = rgb { 185 164 220 }
+	color_ui = rgb { 255 73 121 }
+}
+
+TTU ={
+	color = rgb { 255 164 20 }
+	color_ui = rgb { 255 73 121 }
+}
+
+
 
 
 ##########################
