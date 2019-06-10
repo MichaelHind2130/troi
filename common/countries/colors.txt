@@ -49,8 +49,25 @@ TTU ={
 	color_ui = rgb { 255 73 121 }
 }
 
+PLE ={
+	color = rgb { 201 14 123 }
+	color_ui = rgb { 255 73 121 }
+}
 
+NAN ={
+	color = rgb { 20 214 223 }
+	color_ui = rgb { 255 73 121 }
+}
 
+WYN ={
+	color = rgb { 120 14 123 }
+	color_ui = rgb { 255 73 121 }
+}
+
+SPE ={
+	color = rgb { 0 235 123 }
+	color_ui = rgb { 255 73 121 }
+}
 
 ##########################
 GER = {
@@ -587,16 +604,3 @@ D14 = {
 D15 = {
 	color = rgb { 194 140 86 }
 	color_ui = rgb { 252 182 112 }
-}
-D16 = {
-	color = rgb { 123 12 98 }
-	color_ui = rgb { 252 182 112 }
-}
-D17 = {
-	color = rgb { 124 190 186 }
-	color_ui = rgb { 252 182 112 }
-}
-D18 = {
-	color = rgb { 149 130 68 }
-	color_ui = rgb { 252 182 112 }
-}

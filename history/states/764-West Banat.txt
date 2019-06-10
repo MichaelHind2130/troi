@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = TND
-		controller = YUG
+		controller = TND
 
 		buildings = {
 			infrastructure = 6

@@ -2225,4 +2225,8 @@ IFI_democratic:1 "Inifali"
 SRN_neutrality:1 "Soron"
 WSR_neutrality:1 "Weser"
 FLN_neutrality:1 "Falen"
+PLE_communism:1 "Polesie"
+NAN_communism:1 "Nan"
+WYN_communism:1 "Wayden"
+SPE_democratic:1 "Spance"
 
