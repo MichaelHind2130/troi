@@ -19,26 +19,14 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
-
+set_popularities = {
+	fascism = 100
+	communism = 0
+	neutrality = 0
+	democratic = 0
+}
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 100
-		}
-		
-		communism = {
-			popularity = 0
-		}
-		
-		neutrality = { 
-			popularity = 0
-		}
-	}
 	
 	ruling_party = fascism
 	last_election = "1933.3.5"
