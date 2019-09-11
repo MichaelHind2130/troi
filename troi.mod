@@ -6,4 +6,4 @@ tags={
 	"Technologies"
 	"Graphics"
 }
-supported_version="1.7.1"
+supported_version="1.7.2"
