@@ -201,6 +201,7 @@ GLC = "countries/Galicia.txt"
 ADU = "countries/Andalusia.txt"
 ######################
 
+NTN = "countries/NeutralZone.txt"
 TBL = "countries/BlackLegion.txt"
 TEU = "countries/EnigmaUnion.txt"
 KOD = "countries/KingdomOfDyna.txt"
@@ -243,3 +244,4 @@ SOR = "countires/SorAbel.txt"
 TET = "countires/Tetic.txt"
 ######################
 TIZ - "countries/InfectedZone.txt"
+

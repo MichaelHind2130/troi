@@ -1,0 +1,215 @@
+focus_tree = {
+	id = the_zarix_order_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = ZAO
+		}
+	}
+	
+	default = no
+	
+
+	focus = {
+		id = TEU_test_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = TEU_political_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+focus = {
+		id = TEU_political_effort_2
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_political_effort }
+		x = 0
+		y = 2
+		relative_position_id = TEU_political_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_political_effort_3
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_political_effort_2 }
+		x = 0
+		y = 2
+		relative_position_id = TEU_political_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+
+
+
+	focus = {
+		id = TEU_SW
+		icon = GFX_goal_generic_secret_weapon
+		x = 20
+		y = 10
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+focus = {
+		id = TEU_SW_2
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = TEU_SW }
+		x = 0
+		y = 1
+		relative_position_id = TEU_SW
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SW_3
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = TEU_SW_2 }
+		x = 0
+		y = 1
+		relative_position_id = TEU_SW_2
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SWW
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_SW_3 }
+		mutually_exclusive = { focus = TEU_SWW_2 }
+		x = 2
+		y = 1
+		relative_position_id = TEU_SW_3
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SWW_2
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_SW_3 }
+		mutually_exclusive = { focus = TEU_SWW }
+		x = -2
+		y = 1
+		relative_position_id = TEU_SW_3
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+
+focus = {
+		id = TEU_SW_4
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = TEU_SW_3 } 
+		x = 0
+		y = 2
+		relative_position_id = TEU_SW_3
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SW_5
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = TEU_SW_4 }
+		x = 0
+		y = 2
+		relative_position_id = TEU_SW_4
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = TEU_SW_6
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TEU_SW_5 }
+		x = 0
+		y = 2
+		relative_position_id = TEU_SW_5
+		cost = 10
+
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+
+
+
+}

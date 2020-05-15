@@ -69,6 +69,10 @@ SPE ={
 	color_ui = rgb { 255 73 121 }
 }
 
+NTN= {
+	color = rgb { 219 175 132 }
+	color_ui = rgb { 255 73 121 }
+}
 ##########################
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
